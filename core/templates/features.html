@@ -1,0 +1,46 @@
+{% load static %}
+ <!-- Features Section Start -->
+   <section id="features" class="section-padding">
+    <div class="container">
+        <div class="section-header text-center">          
+            <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Recursos Sensacionais!</h2>
+            <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+        </div>
+        <div class="row">
+            <!-- Coluna da Esquerda - Primeiros 3 recursos -->
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <div class="content-left">
+                    {% for recurso in recursos|slice:":3" %}
+                    <div class="box-item wow fadeInLeft" data-wow-delay="0.3s">
+                        <span class="icon">
+                            <i class="{{ recurso.icone }}"></i>
+                        </span>
+                        <div class="text">
+                            <h4>{{ recurso.recurso }}</h4>
+                            <p>{{ recurso.descricao }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            
+            <!-- Coluna da Direita - Últimos 3 recursos -->
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <div class="content-right">
+                    {% for recurso in recursos|slice:"3:" %}
+                    <div class="box-item wow fadeInRight" data-wow-delay="0.3s">
+                        <span class="icon">
+                            <i class="{{ recurso.icone }}"></i>
+                        </span>
+                        <div class="text">
+                            <h4>{{ recurso.recurso }}</h4>
+                            <p>{{ recurso.descricao }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Features Section End -->   
