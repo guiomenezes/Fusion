@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 import dj_database_url
-import os
 from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -28,7 +27,7 @@ SECRET_KEY = 'django-insecure-v9=hj@&b+xz03hct04$(he638(6c3-*%pde6n2w2!8+=twzs!3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://fusion-d9vc.onrender.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
