@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <section id="contact" class="section-padding bg-gray">    
     <div class="container">
     <div class="section-header text-center">          
@@ -35,7 +36,7 @@
                     <div class="help-block with-errors"></div>
                 </div>
                 <div class="submit-button text-left">
-                    <button class="btn btn-common" id="form-submit" type="submit">enviar Mensagem</button>
+                    <button class="btn btn-common" id="form-submit" type="submit">{% trans 'Enviar Mensagem' %}</button>
                     <div id="msgSubmit" class="h3 text-center hidden"></div> 
                     <div class="clearfix"></div> 
                 </div>

@@ -1,8 +1,9 @@
 {% load static %}
+{% load i18n %}
 <section id="pricing" class="section-padding">
     <div class="container">
     <div class="section-header text-center">          
-        <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Pricing</h2>
+        <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">{% trans 'Preços' %}</h2>
         <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
     </div>
     <div class="row">
@@ -18,12 +19,12 @@
             <h3>Pro</h3>
             </div>
             <ul class="description">
-            <li>1 user</li>
-            <li>10 GB storage</li>
-            <li>Email support</li>
-            <li>Lifetime updates</li>
+            <li>{% trans '1 usuário' %}</li>
+            <li>{% trans '10 GB de armazenamento' %}</li>
+            <li>{% trans 'Suporte por e-mail' %}</li>
+            <li>{% trans 'Atualizações Vitalícias' %}</li>
             </ul>
-            <button class="btn btn-common">Buy Now</button>
+            <button class="btn btn-common">{% trans 'Compre Agora' %}</button>
         </div> 
         </div>
         <div class="col-lg-4 col-md-6 col-xs-12 active">
@@ -38,12 +39,12 @@
             <h3>Plus</h3>
             </div>
             <ul class="description">
-            <li>10 user</li>
-            <li>30 GB storage</li>
-            <li>Priority email support</li>
-            <li>Lifetime updates</li>
+            <li>{% trans '10 usuários' %}</li>
+            <li>{% trans '30 GB de armazenamento' %}</li>
+            <li>{% trans 'Suporte priritário por e-mail' %}</li>
+            <li>{% trans 'Atualizações Vitalícias' %}</li>
             </ul>
-            <button class="btn btn-common">Buy Now</button>
+            <button class="btn btn-common">{% trans 'Compre Agora' %}</button>
         </div> 
         </div>
         <div class="col-lg-4 col-md-6 col-xs-12">
@@ -58,12 +59,12 @@
             <h3>Premium</h3>
             </div>
             <ul class="description">
-            <li>Unlimited users</li>
-            <li>Unlimited storage</li>
-            <li>24/7 support</li>
-            <li>Lifetime updates</li>
+            <li>{% trans 'Usuários Ilimitados' %}</li>
+            <li>{% trans 'Armazenamento Ilimitado' %}</li>
+            <li>{% trans 'Suporte 24/7' %}</li>
+            <li>{% trans 'Atualizações Vitalícias' %}</li>
             </ul>
-            <button class="btn btn-common">Buy Now</button>
+            <button class="btn btn-common">{% trans 'Compre Agora' %}</button>
         </div> 
         </div>
     </div>

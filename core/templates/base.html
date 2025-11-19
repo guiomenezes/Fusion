@@ -1,10 +1,12 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="{{ lang }}">
 <head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="https://www.geekuniversity.com.br/static/images/favicon.ico">
 
 <title>Fusion</title>
 
@@ -40,32 +42,32 @@
         <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
             <li class="nav-item active">
             <a class="nav-link" href="#hero-area">
-                Home
+                {% trans 'Início' %}
             </a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="#services">
-                Serviços
+                {% trans 'Serviços' %}
             </a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="#team">
-                Time
+                {% trans 'Equipe' %}
             </a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="#pricing">
-                Preços
+                {% trans 'Preços' %}
             </a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="#testimonial">
-                Clientes
+                {% trans 'Clientes' %}
             </a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="#contact">
-                Contato
+                {% trans 'Contato' %}
             </a>
             </li>
         </ul>
